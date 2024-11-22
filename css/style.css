@@ -1,0 +1,6 @@
+/* Reset do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    background: grey;
+}
