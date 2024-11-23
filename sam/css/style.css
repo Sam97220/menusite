@@ -1,0 +1,108 @@
+/* Reset do navegador */
+* {
+    margin: 0;/* margem */
+    padding: 0;/* preeenchimento */ /* remover cor */
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+body{
+    background: rgb(0, 0, 0);/* cor de fundo */ /* hexadecimal */
+
+} 
+a{
+    text-decoration: none;
+    color: rgb(22, 228, 218);
+
+}
+
+a:hover {
+    color: rgb(255, 225, 182);/*  */
+}
+
+i{
+    color: rgb(192, 222, 248);
+
+
+}
+
+
+/* ID = #
+class = (.) ponto */
+#header{ /* extrutura do menu */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    background: rgb(141, 141, 141);
+    padding: 5px 15px;
+    z-index: 2;
+
+}
+
+.trocar-tema{
+    display: flex;
+        font-size: 30px;
+        justify-content: flex end;/* controle de poição do navegador */
+        background:rgb(1, 255, 255);
+    }
+
+#trocar-tema{
+    font-size: 20px;
+    color: rebeccapurple;
+    cursor: pointer;
+    transition: ;
+
+}
+.menu{
+    display: flex;
+    align-items:center;
+    background: rgba(0, 255, 13, 0);
+    gap: 15px;
+}
+
+.menu-item{
+    width: 100%;
+
+}
+
+.menu-link {
+    display: flex;
+    align-items: center;
+    gap:15;/* coloca espaço nos icnes */
+
+}
+/* ajusta os 4 botoes */
+.menu-mobile {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    border-top: 1px solid rgb(0, 255, 213);
+}
+
+.menu-mobile .menu-link {
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px 15px;
+}
+
+.menu-link.active .menu-icon,
+.menu-link.active .menu-text,
+.menu-link:hover  .menu-icon,
+.menu-link:hover  .menu-text
+{
+    color: red;
+    font-size: 18px;
+
+}
+
+.menu-icon,
+.menu-text{
+    color:rgb(120, 29, 148);
+    font-weight: 600;
+}
+
+
